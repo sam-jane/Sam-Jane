@@ -1,6 +1,6 @@
 ---
 title: "Class Reference"
-author: "Derek Willis"
+author: "Sam Jane"
 output:
   html_document:
     theme: cerulean
@@ -33,3 +33,6 @@ setwd("~/jour472/data_journalism_2024_fall")
 install.packages("tidyverse")
 library(tidyverse)
 ```
+
+''''{r}
+
