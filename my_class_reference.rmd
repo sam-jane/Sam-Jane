@@ -32,7 +32,31 @@ setwd("~/jour472/data_journalism_2024_fall")
 ```{r}
 install.packages("tidyverse")
 library(tidyverse)
+To install packages, we use the function install.packages(). 
+You only need to install a library once, the first time you set up a new computer to do data journalism work. You never need to install it again, unless you want to update to a newer version of the package.
+
 ```
 
-''''{r}
+### Group by count
+```{r}
+data |> function
+data |> group_by(COLUMN NAME) |> summarize(VARIABLE NAME = AGGREGATE FUNCTION(COLUMN NAME))
+You can also use the summarize function, which can create a new data frame
+
+```
+
+### Do the sum
+```{r}
+Adding up the sum of a group of numbers is relatively easy in 
+Put the column we want to total – “amount” – inside the sum() function sum(amount)
+EXAMPLE
+maryland_winred_contributions |>
+  group_by(memo_text) |>
+  summarise(
+    count_contribs = n(),
+    total_amount = sum(amount)
+  ) |>
+  arrange(desc(total_amount))
+```
+
 
