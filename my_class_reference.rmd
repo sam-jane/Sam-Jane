@@ -59,4 +59,9 @@ maryland_winred_contributions |>
   arrange(desc(total_amount))
 ```
 
+HOW TO DO MEAN
+-  count_contribs = n(),
+    total_amount = sum(amount),
+    mean_amount = mean(amount),
+    median_amount = median(amount)
 

@@ -149,7 +149,7 @@ contribs_by_date <- maryland_winred_contributions |>
 ```
 
 Compared to the previous codeblock, what has changed and how did that affect the result?
-We now have the dates and the count blocks.
+We now have the dates and the count blocks. They are grouped by the dates.
 
 **Answer**
 
@@ -208,7 +208,7 @@ maryland_winred_contributions |>
 Compared to the previous codeblock, what has changed and how did that affect the result?
 Glancing at the names, which of the top results from Maryland?
 
-This added the mean function which averaged out each donation to the Trump and other campaigns. 
+This added the mean function which averaged out each donation to the Trump and other campaigns. Larry Hogan recieved over 4,000 contributions from people.
 ### Task 11
 
 **Task** Run the following codeblock to group the maryland_winred_contributions dataframe by the city for each contribution. Then do the following summarizations for each group:count the number of contributions, add up the value of all contributions, calculate the mean and median contributions amounts and calculate the smallest and largest contributions Then sort so the city with the largest total contribution amount is listed first.
@@ -228,3 +228,4 @@ maryland_winred_contributions |>
 ```
 
 Compared to the previous codeblock, what has changed and how did that affect the result? How is the data sorted? **Answer**
+This organizes it based on city. It drastically changes where the viewer can see where the money is coming from and how it is spread across Maryland. You can now organize different aspects of the chart and find out which areas are donating more.
