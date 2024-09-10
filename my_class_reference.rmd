@@ -65,3 +65,26 @@ HOW TO DO MEAN
     mean_amount = mean(amount),
     median_amount = median(amount)
 
+#MUTATE
+- You can add a column by using the mutate function
+EXAMPLE 
+``` {r}
+primary_24 |>
+  select(office_name, office_district, candidate_name, party, county_name, election_day, votes) |>
+  mutate(
+  percent_election_day = election_day/votes
+)
+```
+
+#HOW TO MAKE DATA MORE CLEAN
+**Answer**: str_to_title(): This function converts the first letter of each word in a string to uppercase while converting the rest to lowercase, effectively title-casing the string. str_to_lower(): This function converts all characters in a string to lowercase.
+
+#ASCEND ORDER
+``` {r}
+primary_24 |>
+  select(office_name, office_district, candidate_name, party, county_name, election_day, votes) |>
+  mutate(
+  percent_election_day = (election_day/votes)*100
+)  |> 
+  arrange(percent_election_day)
+```
